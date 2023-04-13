@@ -145,7 +145,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 geofenceRadius.toFloat()
             )
             .setExpirationDuration(Geofence.NEVER_EXPIRE)
-            .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_DWELL or Geofence.GEOFENCE_TRANSITION_ENTER)
+            .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_DWELL or Geofence.GEOFENCE_TRANSITION_ENTER or Geofence.GEOFENCE_TRANSITION_EXIT)
             .setLoiteringDelay(5000)
             .build()
 

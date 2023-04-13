@@ -29,7 +29,9 @@ class GeofenceBroadcastReceiver : BroadcastReceiver() {
             }
             val geofenceTransition = geofencingEvent.geofenceTransition
             Log.d("eeeee",geofenceTransition.toString())
-            if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER || geofenceTransition == Geofence.GEOFENCE_TRANSITION_DWELL || geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
+            if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER
+                || geofenceTransition == Geofence.GEOFENCE_TRANSITION_DWELL
+                || geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
                 val geofenceTransitionString =
                     when (geofenceTransition) {
                         Geofence.GEOFENCE_TRANSITION_ENTER -> "Anda telah memasuki area"
